@@ -15,13 +15,12 @@
 #map svg {
     width: 100%;
 }
-.choice-prefix {
+/* .choice-prefix {
     padding: 2rem 2.5rem;
-    color: white;
-}
+} */
 
 .choice-text {
-    padding: 2rem;
+    margin: 1rem;
     width: 100%;
 }
 

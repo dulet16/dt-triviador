@@ -323,11 +323,11 @@ choices.forEach((choice) => {
         if (!acceptingAnswers) return
 
         acceptingAnswers = false
-        const selectedChoice = e.target
-        const selectedAnswer = selectedChoice.dataset['number']
+        const selectedChoice = e.currentTarget
+        const selectedAnswer = selectedChoice.firstElementChild.dataset['number']
 
         let classToApply =
-            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+            selectedAnswer == currentQuestion.answer? 'correct' : 'incorrect'
 
         if (classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
@@ -336,10 +336,10 @@ choices.forEach((choice) => {
             colorMap('red')
         }
 
-        selectedChoice.parentElement.classList.add(classToApply)
+        selectedChoice.classList.add(classToApply)
 
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply)
+            selectedChoice.classList.remove(classToApply)
             getNewQuestion()
         }, 1000)
     })
