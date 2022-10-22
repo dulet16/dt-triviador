@@ -1,43 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 :root {
+    --primary-text: #fff;
+    --primary-accent: #186b5c;
+    --secondary-accent: #ffea02;
+}
+body { 
     background-color: rgb(29, 26, 26);
     background-image: url("/img/greycamo-background.jpg");
+    color: var(--primary-text);
+    font-family: 'Nova Square', cursive;
+    margin: 0;
 }
-
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
-    font-family: 'Nova Square', cursive;
 }
-
-h1 {
-    font-size: 5.4rem;
-    color: rgb(255, 255, 255);
-    margin-bottom: 5rem;
+.hero { 
+    background: linear-gradient(45deg, rgba(27, 49, 45, 0.5) 10%, rgba(27, 49, 45, 0.4));
+}
+a {
+    color: var(--primary-text)
 }
 
 #gameTitle {
-    font-size: 6.8rem;
     font-weight: bold;
-    color: rgb(255, 255, 255);
-    margin-bottom: 0rem;
-}
-
-
-
-h2 {
-    font-size: 4.2rem;
-    color: rgb(255, 255, 255);
-    margin-bottom: 4rem;
-
-}
-
-h3 {
-    font-size: 2.2rem;
-    margin-bottom: 4rem;
 }
 
 .container {
@@ -50,14 +36,9 @@ h3 {
     margin: 0 auto;
     padding: 2rem;
 }
-
-.flex-column {
+.menu {
     display: flex;
     flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
     align-items: center;
 }
 
@@ -74,20 +55,26 @@ h3 {
 }
 
 .btn {
-    font-size: 2.4rem;
-    padding: 2rem 0;
-    width: 30rem;
+    padding: 2rem;
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #fff;
-    background: rgb(24, 107, 92);
+    color: var(--primary-text);
+    background: #186b5c;
+    border: none;
     border-radius: 4px;
+    min-width: 20rem;
 }
-
+.space-out {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+.btn:disabled { 
+    color: gray;
+}
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244, 0.6);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(24, 107, 92, 0.5);
     transition: transform 150ms;
     transform: scale(1.03);
 }
@@ -97,18 +84,16 @@ h3 {
     box-shadow: none;
     transform: none;
 }
-
-#highscore-btn {
-    background: linear-gradient(90deg, rgb(255, 247, 9) 0%, rgb(240, 221, 6) 100%);
+.home {
+    text-align: center;
+}
+.highscore-btn {
+    background-color: var(--secondary-accent);
+    color: #000;
 }
 
-#highscore-btn:hover {
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255,255,0,0.5)
-}
-
-.fa-crown {
-    font-size: 2.5rem;
-    margin-left: 1rem;
+.highscore-btn:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(240, 221, 6, 0.5)
 }
 
 /* End Page CSS */
@@ -124,7 +109,6 @@ input {
     margin-bottom: 1rem;
     width: 20rem;
     padding: 1.5rem;
-    font-size: 1.8rem;
     border: none;
     box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
@@ -135,22 +119,15 @@ input::placeholder {
 
 #username {
     margin-bottom: 3rem;
-    width: 100%;
     outline: none;
 }
-
-#end-text {
-    font-size: 2.4rem;
-    color: #fff;
+#end {
     text-align: center;
-}
-
-#saveScoreBtn {
-    border: none;
 }
 
 .fa-home {
     margin-left: 1rem;
-    font-size: 2rem;
-    color: rgb(28, 26, 26)
+}
+.fa-crown {
+    margin-left: 1rem;
 }
