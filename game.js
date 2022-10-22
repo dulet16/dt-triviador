@@ -275,10 +275,10 @@ let questions = [
 const SCORE_POINTS = 100
 
 const chooseDifficulty = (evt, fast) => {
+    console.log(fast)
     if (fast) {
         isEasy = true
-    }
-    {
+    } else {
         isEasy = false
     }
     difficulty.classList.add('hide')
