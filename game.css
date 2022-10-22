@@ -4,13 +4,13 @@
     width: 100%;
     border-radius: 4px;
     background-color: var(--primary-accent);
+    transition: all 100ms;
 }
 
 .choice-container:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(24, 107, 92, 0.5);
     transform: scale(1.02);
-    transform: transform 100ms;
 }
 #map svg {
     width: 100%;
