@@ -5,6 +5,10 @@ const progressText = document.getElementById('progressText')
 const game = document.getElementById('game')
 const scoreText = document.getElementById('score')
 const progressBarFull = document.getElementById('progressBarFull')
+// SOUNDS
+const clickSound = new Audio('audio/click.wav')
+const successSound = new Audio('audio/success.wav')
+const errorSound = new Audio('audio/error.wav')
 
 let isEasy
 let currentQuestion = {}
@@ -275,7 +279,7 @@ let questions = [
 const SCORE_POINTS = 100
 
 const chooseDifficulty = (evt, fast) => {
-    console.log(fast)
+    clickSound.play()
     if (fast) {
         isEasy = true
     } else {
@@ -330,9 +334,11 @@ choices.forEach((choice) => {
             selectedAnswer == currentQuestion.answer? 'correct' : 'incorrect'
 
         if (classToApply === 'correct') {
+            successSound.play()
             incrementScore(SCORE_POINTS)
             colorMap('#29e86f')
         } else {
+            errorSound.play()
             colorMap('red')
         }
 
