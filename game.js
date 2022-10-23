@@ -16,259 +16,259 @@ let availableQuestions = []
 
 let questions = [
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'Koji sport na svetu ima najviše registrovanih članova?',
+        choice1: 'Skijanje',
+        choice2: 'Ribolov',
+        choice3: 'Fudbal',
+        choice4: 'Tenis',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
+        question: 'U kom gradu se nalazi najviša zgrada na svetu?',
         choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        choice2: 'Njujork',
+        choice3: 'Šangaj',
+        choice4: 'Pariz',
         answer: 1
     },
     {
         question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
+            'Kako se zove faza dubokog sna u kojoj se nalaze medvedi tokom zimskih meseci?',
+        choice1: 'Hiperbolacija',
+        choice2: 'Hipertenzija',
+        choice3: 'Hibernacija',
+        choice4: 'Hipotermija',
         answer: 3
     },
     {
         question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
+            'Kao mladi kralj, Dušan se posebno istakao u bici kod?',
+        choice1: 'Velbužda',
+        choice2: 'Stefanije',
+        choice3: 'Dimotike',
+        choice4: 'Rusokrasta',
         answer: 1
     },
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'Koja planeta je najtoplija u sunčevom sistemu?',
+        choice1: 'Mars',
+        choice2: 'Venera',
+        choice3: 'Zemlja',
+        choice4: 'Jupiter',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
-        choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        question: 'Autor epa "Enejida" je?',
+        choice1: 'Vergilije',
+        choice2: 'Homer',
+        choice3: 'Horacije',
+        choice4: 'Ovidije',
         answer: 1
     },
     {
         question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
+            'Koji organ u ljudskom telu ima dve komore i dve pretkomore?',
+        choice1: 'Pluća',
+        choice2: 'Bubreg',
+        choice3: 'Srce',
+        choice4: 'Jetra',
         answer: 3
     },
     {
         question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
+            'Koja je najduža reka na svetu?',
+        choice1: 'Nil',
+        choice2: 'Amazon',
+        choice3: 'Jangcekjang',
+        choice4: 'Misisipi',
         answer: 1
     },
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'Koji je najviši vrh na svetu?',
+        choice1: 'Akonkagva',
+        choice2: 'Mont Everest',
+        choice3: 'Kilimandžaro',
+        choice4: 'Denali',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
-        choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        question: 'Glavni grad Holandije je?',
+        choice1: 'Amsterdam',
+        choice2: 'Roterdam',
+        choice3: 'Hag',
+        choice4: 'Groningen',
         answer: 1
     },
     {
         question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
+            'Glavni grad Norveške je?',
+        choice1: 'Narvik',
+        choice2: 'Olesund',
+        choice3: 'Oslo',
+        choice4: 'Molde',
         answer: 3
     },
     {
         question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
+            'Sa kojom ekipom je Maradona 1989. godine osvojio Kup UEFA?',
+        choice1: 'Napoli',
+        choice2: 'Barselona',
+        choice3: 'Sevilja',
+        choice4: 'Nije osvojio kup UEFA te godine',
         answer: 1
     },
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'Muziku za balet u dva čina "Krcko Oraščić" napisao je?',
+        choice1: 'Ludvig Van Betoven',
+        choice2: 'Petar Ilič Čajkovski',
+        choice3: 'Stevan Mokranjac',
+        choice4: 'Frederik Fransoa Šopen',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
-        choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        question: 'Koje godine se desio prvi uspešan prolet ljudske sonde pored Marsa?',
+        choice1: '1965',
+        choice2: '1968',
+        choice3: '1975',
+        choice4: '1971',
         answer: 1
     },
     {
         question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
+            'Prilep se nalazi u?',
+        choice1: 'Sloveniji',
+        choice2: 'Srbiji',
+        choice3: 'Severnoj Makedoniji',
+        choice4: 'Crnoj Gori',
         answer: 3
     },
     {
         question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
+            'Veliki požari su krajem 2019. i početkom 2020. zahvatili jedan kontinent?',
+        choice1: 'Australiju',
+        choice2: 'Evropu',
+        choice3: 'Afriku',
+        choice4: 'Aziju',
         answer: 1
     },
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'Najveći grad u Južnoafričkoj Republici je?',
+        choice1: 'Kejptaun',
+        choice2: 'Johanesburg',
+        choice3: 'Durban',
+        choice4: 'Pretorija',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
-        choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        question: 'U kojoj državi se nalazi Nant?',
+        choice1: 'Francuska',
+        choice2: 'Italija',
+        choice3: 'Nemačka',
+        choice4: 'Švajcarska',
         answer: 1
     },
     {
         question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
-        answer: 3
-    },
-    {
-        question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
-        answer: 1
-    },
-    {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+            'Sa kojom od navedenih država ne graniči Rusija?',
+        choice1: 'Estonija',
+        choice2: 'Moldavija',
+        choice3: 'Finska',
+        choice4: 'Ništa od ponuđenog',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
-        choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        question:
+            'Koje godine se odigrala čuvena Bitka za Kozari, poznata još i kao Kozarska ofanziva?',
+        choice1: '1942',
+        choice2: '1941',
+        choice3: '1940',
+        choice4: '1943',
         answer: 1
     },
     {
-        question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
-        answer: 3
-    },
-    {
-        question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
+        question: 'Najveće jezero na Balkanskom poluostrvu je?',
+        choice1: 'Skadarsko jezero',
+        choice2: 'Ohridsko jezero',
+        choice3: 'Prespansko jezero',
+        choice4: 'Đerdapsko jezero',
         answer: 1
     },
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'Najduža rijeka Azijskog kontinenta je?',
+        choice1: 'Ind',
+        choice2: 'Huanghe',
+        choice3: 'Lena',
+        choice4: 'Jangcekjang',
+        answer: 4
+    },
+    {
+        question:
+            'U Andrićevom romanu, Omer-paša Latas je bio oženjen Said hanumom, koja je poreklom bila?',
+        choice1: 'Grkinja',
+        choice2: 'Austrijanka',
+        choice3: 'Ruskinja',
+        choice4: 'Turkinja',
         answer: 2
     },
     {
-        question: 'The tallest building in the world is located in which city?',
-        choice1: 'Dubai',
-        choice2: 'New York',
-        choice3: 'Shanghai',
-        choice4: 'None of the above',
+        question:
+            'Koji američki predsednik se nalazi na novčanici od 20 dolara?',
+        choice1: 'Abraham Linkoln',
+        choice2: 'Endru Džekson',
+        choice3: 'Bendžamin Frenklin',
+        choice4: 'Džejms Medison',
+        answer: 2
+    },
+    {
+        question: 'Koje godine je rođen Mahatma Gandi?',
+        choice1: '1901',
+        choice2: '1869',
+        choice3: '1889',
+        choice4: '1876',
+        answer: 2
+    },
+    {
+        question: 'Koja gradska opština Beograda je površinom najveća?',
+        choice1: 'Barajevo',
+        choice2: 'Čukarica',
+        choice3: 'Grocka',
+        choice4: 'Palilula',
+        answer: 4
+    },
+    {
+        question:
+            'Vlada koje zemlje je 1952. godine ponudila Albertu Ajnštajnu da preuzme dužnost predsednika?',
+        choice1: 'Švajcarska',
+        choice2: 'Izrael',
+        choice3: 'Austrija',
+        choice4: 'Nemačka',
+        answer: 2
+    },
+    {
+        question:
+            'Glavni grad Madagaskara je?',
+        choice1: 'Antananarivo',
+        choice2: 'Toliara',
+        choice3: 'Toamasina',
+        choice4: 'Mahajanga',
         answer: 1
     },
     {
         question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
+            'Koji je kubni koren broja 729?',
+        choice1: '11',
+        choice2: '7',
+        choice3: '9',
+        choice4: '8',
         answer: 3
     },
     {
         question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
-        answer: 1
-    },
-    {
-        question:
-            'What percent of American adults believe that chocolate milk comes from brown cows?',
-        choice1: '20%',
-        choice2: '18%',
-        choice3: '7%',
-        choice4: '33%',
-        answer: 3
-    },
-    {
-        question:
-            'Approximately what percent of U.S. power outages are caused by squirrels?',
-        choice1: '10-20%',
-        choice2: '5-10%',
-        choice3: '15-20%',
-        choice4: '30%-40%',
+            'Koja od ovih reka je najkraća po dužini?',
+        choice1: 'Misisipi',
+        choice2: 'Jangcekjang',
+        choice3: 'Amazon',
+        choice4: 'Nil',
         answer: 1
     }
 ]
@@ -302,7 +302,7 @@ const getNewQuestion = () => {
     }
 
     questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressText.innerText = `Pitanje ${questionCounter} od ${MAX_QUESTIONS}`
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
