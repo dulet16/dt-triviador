@@ -178,7 +178,7 @@ let questions = [
     },
     {
         question:
-            'Koje godine se odigrala čuvena Bitka za Kozari, poznata još i kao Kozarska ofanziva?',
+            'Koje godine se odigrala čuvena Bitka na Kozari, poznata još i kao Kozarska ofanziva?',
         choice1: '1942',
         choice2: '1941',
         choice3: '1940',
