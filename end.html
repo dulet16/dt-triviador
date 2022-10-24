@@ -11,20 +11,34 @@
 </head>
 
 <body>
-    <div class="hero">
+    <div class="hero-banner">
         <div class="container">
-            <div id="end" class="menu">
-                <h2 id="finalScore">0</h2>
-                <h2>Unesite Vaše ime ispod da biste sačuvali rezultat!</h2>
-                <form class="menu">
-                    <input type="text" name="name" id="username" placeholder="Unesite svoje ime" />
-                    <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)" disabled>
-                        Sačuvaj
-                    </button>
-                </form>
-                <a href="/game.html" class="btn highscore-btn">Igraj ponovo!</a>
-                <a href="/" class="btn">Početna strana <i class="fas fa-home"></i></a>
-            </div>
+            <section class="section has-text-centered">
+                <div class="columns is-centered">
+                    <div class="column is-half-desktop">
+                        <div id="end">
+                            <h2 class="title is-2 mb-6">Rezultat: <span id="finalScore">0</span></h2>
+                            <h2 class="subtitle is-4">Unesite Vaše ime ispod da biste sačuvali rezultat!</h2>
+                            <form>
+                                <input class="input is-large mb-4" type="text" name="name" id="username"
+                                    placeholder="Unesite svoje ime" />
+                                <button class="my-2 button is-primary is-large is-fullwidth" id="saveScoreBtn"
+                                    type="submit" onclick="saveHighScore(event)" disabled>
+                                    Sačuvaj
+                                </button>
+                            </form>
+                            <div class="is-flex is-flex-direction-column">
+                                <a class="my-2 button is-warning is-large" href="/game.html">Igraj ponovo!</a>
+                                <a class="my-2 button is-primary is-large" href="/">
+                                    <span>Početna strana</span>
+                                    <span class="icon">
+                                        <i class="fas fa-home"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <script src="end.js"></script>

@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Najbolji rezultati</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="highscores.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
         integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous" />
 </head>
 
 <body>
-    <div class="hero">
+    <div class="hero-banner">
         <div class="container">
-            <div id="highScores" class="menu">
-                <h2 id="finalScore">Tabela najboljih rezultata</h2>
-                <ul id="highScoresList"></ul>
-                <a href="/" class="btn">Početna strana<i class="fas fa-home"></i></a>
-            </div>
+            <section class="section has-text-centered">
+                <div class="columns is-centered">
+                    <div class="column is-half-desktop">
+                        <div id="highScores">
+                            <h2 class="subtitle is-2" id="finalScore">Tabela najboljih rezultata</h2>
+                            <ul class="mb-4" id="highScoresList"></ul>
+                            <div class="is-flex is-flex-direction-column">
+                                <a class="my-2 button is-primary is-large" href="/">
+                                    <span>Početna strana</span>
+                                    <span class="icon">
+                                        <i class="fas fa-home"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </div>
-    <script src="highscores.js"></script>
-    <script src="sounds.js"></script>
+        <script src="highscores.js"></script>
+        <script src="sounds.js"></script>
 </body>
 
 </html>

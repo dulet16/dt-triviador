@@ -11,21 +11,29 @@
 </head>
 
 <body>
-    <div class="hero">
+    <div class="hero-banner">
         <div class="container">
-            <div class="home">
-                <h1 id="gameTitle">DT Triviador</h1>
-                <div class="space-out">
-                    <h2>Oslobodite celu Srbiju!</h2>
-                    <h2>Da li ste spremni?</h2>
+            <section class="section has-text-centered">
+                <div class="columns is-centered">
+                    <div class="column is-half-desktop">
+                        <h1 class="title is-1" id="gameTitle">DT Triviador</h1>
+                        <div class="my-5">
+                            <h2 class="subtitle is-3">Oslobodite celu Srbiju!</h2>
+                            <h2 class="subtitle is-3">Da li ste spremni?</h2>
+                        </div>
+                        <div class="is-flex is-flex-direction-column">
+                            <a class="my-2 button is-primary is-large" href="/game.html">Započni igru</a>
+                            <a class="my-2 button is-warning is-large" href="/highscores.html">
+                                <span>Najbolji rezultati</span>
+                                <span class="icon">
+                                    <i class="fas fa-crown"></i>
+                                </span>
+                            </a>
+                            <a class="my-2 button is-primary is-large" href="/help.html">Pomoć</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="menu">
-                    <a href="/game.html" class="btn">Započni igru</a>
-                    <a href="/highscores.html" class="btn highscore-btn">Najbolji rezultati<i
-                            class="fas fa-crown"></i></a>
-                    <a href="/help.html" class="btn">Pomoć</a>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
     <script src="sounds.js"></script>

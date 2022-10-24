@@ -1,5 +1,5 @@
 const question = document.getElementById('question')
-const map = document.querySelectorAll('#map path')
+const map = document.querySelectorAll('svg path')
 const choices = Array.from(document.querySelectorAll('.choice-container'))
 const progressText = document.getElementById('progressText')
 const game = document.getElementById('game')
@@ -285,8 +285,8 @@ const chooseDifficulty = (evt, fast) => {
     } else {
         isEasy = false
     }
-    difficulty.classList.add('hide')
-    game.classList.remove('hide')
+    difficulty.classList.add('is-hidden')
+    game.classList.remove('is-hidden')
     startGame()
 }
 const startGame = () => {
